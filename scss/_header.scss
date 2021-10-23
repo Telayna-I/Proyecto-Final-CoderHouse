@@ -1,0 +1,96 @@
+header{
+    background-color:$bgprimario;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+    .nav-propia{
+
+        .container-fluid{
+
+            .menu{
+                li{
+                    list-style-type: none;
+
+                    .nav-link{
+                        position: relative;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: $textsec;
+                        padding: 10px;
+                    }
+                    .nav-link::after{
+                        content:"";
+                        background-color:white;
+                        position: absolute;
+                        left: 0;
+                        top: calc(100% - 10px);
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 3px;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                    }
+                    
+                    .nav-link.selected::after{
+                        opacity: 0.8;
+                    }
+                    .nav-link:hover::after{
+                        opacity: 0.8;
+                    }
+                    .nav-link:link{
+                        text-decoration:none;
+                    }
+                    .nav-link:visited{
+                        text-decoration:none;
+                    }
+                    .nav-link:active{
+                        text-decoration:none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1040px){
+
+}
+
+@media only screen and (max-width: 1120px){
+
+}
+@media only screen and (max-width: 990px){
+    
+    header{
+        .nav-propia{
+            .container-fluid{
+                .menu{
+                    li{
+                        .nav-link::after{
+                            background-color:transparent;
+                        }
+                        .nav-link:hover{
+                            filter:brightness(0.5) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 740px){
+
+}
+
+
+
+

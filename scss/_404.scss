@@ -1,0 +1,38 @@
+.error-404{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        position: relative;
+        top: -1em;
+        padding: 0.5em;
+        background-color:$textsec;
+        border-radius: 20px;
+    }
+
+    .boton-inicio{
+        position: relative;
+        top: -14em;
+        padding: 1em;
+        background-color:$bgvioletao;
+        border-radius: 20px;
+        color:$textsec;
+    }
+
+    .boton-inicio:link{
+        text-decoration:none;
+    }
+    .boton-inicio:visited{
+        text-decoration:none;
+    }
+    .boton-inicio:active{
+        text-decoration:none;
+    }
+
+    .boton-inicio:hover{
+        transform: scale(1.1,1.1);
+        transition: 0.3;
+    }
+}

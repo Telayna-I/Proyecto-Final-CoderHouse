@@ -1,0 +1,52 @@
+.footer-bootstrap{
+    background-color: $bgprimario;
+
+    .footer-contactanos{
+        color: $textsec;
+
+        h4{
+            font-family:'IBM Plex Sans', sans-serif;
+            font-weight: bold;
+            font-size: $pprimario;
+        }
+    }
+
+    .footer-seguinos{
+        color: $textsec;
+
+        h4{
+            font-family:'IBM Plex Sans', sans-serif;
+            font-weight: bold;
+            font-size: $pprimario;
+        }
+
+        .footer-seguinos-iconos{
+            .fab{
+                color: $textsec;
+                font-size: 1.563em;
+                padding-left: 0;
+                line-height: 40px;
+            }
+
+            .fab:hover{
+                transform: scale(1.2,1.2);
+                transition: 0.3;
+            }
+            
+        }
+    }
+
+    
+
+    .footer-boring-stuff{
+        color: $textsec;
+
+        h4{
+            font-family:'IBM Plex Sans', sans-serif;
+            font-weight: bold;
+            font-size: $pprimario;
+        }
+    }
+}
+
+

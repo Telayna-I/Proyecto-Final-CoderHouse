@@ -1,0 +1,567 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  font-style: normal;
+  padding: 4.375em 0px 0px 0px; }
+
+header {
+  background-color: #560090;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  header .nav-propia .container-fluid .menu li {
+    list-style-type: none; }
+    header .nav-propia .container-fluid .menu li .nav-link {
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      padding: 10px; }
+    header .nav-propia .container-fluid .menu li .nav-link::after {
+      content: "";
+      background-color: white;
+      position: absolute;
+      left: 0;
+      top: calc(100% - 10px);
+      width: 100%;
+      height: 4px;
+      border-radius: 3px;
+      opacity: 0;
+      transition: opacity 0.3s; }
+    header .nav-propia .container-fluid .menu li .nav-link.selected::after {
+      opacity: 0.8; }
+    header .nav-propia .container-fluid .menu li .nav-link:hover::after {
+      opacity: 0.8; }
+    header .nav-propia .container-fluid .menu li .nav-link:link {
+      text-decoration: none; }
+    header .nav-propia .container-fluid .menu li .nav-link:visited {
+      text-decoration: none; }
+    header .nav-propia .container-fluid .menu li .nav-link:active {
+      text-decoration: none; }
+
+@media only screen and (max-width: 990px) {
+  header .nav-propia .container-fluid .menu li .nav-link::after {
+    background-color: transparent; }
+  header .nav-propia .container-fluid .menu li .nav-link:hover {
+    filter: brightness(0.5); } }
+
+.footer-bootstrap {
+  background-color: #560090; }
+  .footer-bootstrap .footer-contactanos {
+    color: white; }
+    .footer-bootstrap .footer-contactanos h4 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
+      font-size: 1.375em; }
+  .footer-bootstrap .footer-seguinos {
+    color: white; }
+    .footer-bootstrap .footer-seguinos h4 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
+      font-size: 1.375em; }
+    .footer-bootstrap .footer-seguinos .footer-seguinos-iconos .fab {
+      color: white;
+      font-size: 1.563em;
+      padding-left: 0;
+      line-height: 40px; }
+    .footer-bootstrap .footer-seguinos .footer-seguinos-iconos .fab:hover {
+      transform: scale(1.2, 1.2);
+      transition: 0.3; }
+  .footer-bootstrap .footer-boring-stuff {
+    color: white; }
+    .footer-bootstrap .footer-boring-stuff h4 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
+      font-size: 1.375em; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  main .main-div-texto {
+    display: flex;
+    flex-direction: column;
+    width: 31.25em;
+    margin-left: 3.125em;
+    margin-bottom: 3.125em; }
+    main .main-div-texto h1 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold; }
+    main .main-div-texto .main-div-p {
+      font-size: 1.375em;
+      line-height: 1.563em;
+      font-weight: 500; }
+    main .main-div-texto .main-div-iconos {
+      display: flex;
+      height: 4.375em;
+      width: 15.625em;
+      background-color: #140021;
+      border-radius: 1.25em;
+      margin-top: 2.188em;
+      justify-content: space-around;
+      align-items: center; }
+    main .main-div-texto a {
+      color: white;
+      font-size: 2.5em;
+      text-align: center; }
+    main .main-div-texto a:hover {
+      transform: scale(1.2, 1.2);
+      transition: 0.3; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em; }
+  .servicios .h2-servicios {
+    position: relative;
+    top: 1.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7em;
+    background-color: #866EAD;
+    border-radius: 20px; }
+  .servicios .boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 150px;
+    padding: 8em 0em; }
+    .servicios .boxes .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      background-color: white;
+      height: 500px;
+      width: 280px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.67);
+      box-shadow: 5px 12px 22px 2px rgba(0, 0, 0, 0.38); }
+      .servicios .boxes .box .h3-box {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bold;
+        position: relative;
+        top: 50px; }
+      .servicios .boxes .box .p-box {
+        font-size: 15px;
+        padding: 10px 30px;
+        margin-top: 30px; }
+      .servicios .boxes .box .precio {
+        display: flex;
+        position: relative;
+        top: -20px;
+        padding-left: 50px; }
+      .servicios .boxes .box i {
+        font-size: 2.188em;
+        margin-right: 10px; }
+      .servicios .boxes .box .h3-precio {
+        position: relative;
+        padding-right: 15px;
+        font-size: 1.563em; }
+      .servicios .boxes .box .texto-precio {
+        line-height: 20px;
+        font-size: 0.813em; }
+      .servicios .boxes .box .boton {
+        align-self: center;
+        position: relative;
+        top: -25px;
+        width: 170px;
+        padding: 10px;
+        border-radius: 20px;
+        color: #560090;
+        font-weight: bolder;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 9px 23px 1px rgba(0, 0, 0, 0.1); }
+      .servicios .boxes .box .boton:hover {
+        background-color: #560090;
+        color: white;
+        transform: scale(1.1, 1.1);
+        transition: 0.3s;
+        box-shadow: 0px 9px 23px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer; }
+      .servicios .boxes .box .beneficios {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        top: -40px; }
+        .servicios .boxes .box .beneficios i {
+          position: relative;
+          top: 4px;
+          padding-right: 8px;
+          font-size: 0.938em;
+          color: #00fc2a; }
+        .servicios .boxes .box .beneficios .beneficio {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1.5em; }
+    .servicios .boxes .box:hover {
+      border: 4px solid #560090;
+      transform: scale(1.1, 1.1);
+      transition: 0.3s; }
+
+@media only screen and (max-width: 1190px) {
+  .main-index {
+    flex-direction: column; }
+    .main-index .main-div-texto {
+      align-items: center;
+      text-align: center; } }
+
+@media only screen and (max-width: 900px) {
+  .main-index {
+    flex-direction: column-reverse; }
+    .main-index .main-div-texto {
+      font-size: 0.8em;
+      text-align: center;
+      margin-left: 0px; }
+    .main-index picture img {
+      width: 400px; }
+  .servicios .boxes {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center; }
+    .servicios .boxes .box {
+      margin-bottom: 3em;
+      margin-right: 0; } }
+
+.main-sobre-nosotros {
+  display: flex;
+  flex-direction: column; }
+  .main-sobre-nosotros .main-div-title {
+    display: flex;
+    position: relative;
+    background-color: #866EAD;
+    border-radius: 20px;
+    top: 35px;
+    z-index: 1; }
+    .main-sobre-nosotros .main-div-title h1 {
+      padding: 13px;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 600; }
+  .main-sobre-nosotros .color-main {
+    display: flex;
+    position: relative;
+    background-color: #2B1B45;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-sobre-nosotros .color-main .grid-container {
+      display: grid;
+      width: 70%;
+      height: 50%;
+      padding: 80px 0px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      grid-row-gap: 40px; }
+    .main-sobre-nosotros .color-main .div {
+      display: flex;
+      width: 230px;
+      height: 255px;
+      border-radius: 20px;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid black; }
+      .main-sobre-nosotros .color-main .div p {
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-align: center; }
+      .main-sobre-nosotros .color-main .div img {
+        padding: 5px; }
+    .main-sobre-nosotros .color-main .servicioTecnico img {
+      margin-top: 1em; }
+    .main-sobre-nosotros .color-main .div:hover {
+      box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.67);
+      transform: scale(1.1, 1.1);
+      transition: 0.5s; }
+
+.imagenes-sucursales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 150px 0px; }
+  .imagenes-sucursales .oficina {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px 1px black; }
+    .imagenes-sucursales .oficina img {
+      width: 300px;
+      height: 200px;
+      border-radius: 20px; }
+  .imagenes-sucursales h2 {
+    padding: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600; }
+
+@media only screen and (max-width: 1040px) {
+  .main-sobre-nosotros .color-main .grid-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 740px) {
+  .main-sobre-nosotros .color-main .grid-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr; } }
+
+.main-contacto {
+  display: flex;
+  background-image: url(contacto.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+  width: 100%;
+  margin-top: 0px; }
+  .main-contacto .main-div-titulo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    width: 450px;
+    height: 250px;
+    margin-left: 100px;
+    color: white;
+    padding: 10px; }
+    .main-contacto .main-div-titulo h1 {
+      font-family: 'Roboto', sans-serif;
+      padding: 5px 0px;
+      font-weight: bold; }
+    .main-contacto .main-div-titulo p {
+      padding: 20px 0px;
+      margin-bottom: 20px; }
+    .main-contacto .main-div-titulo a {
+      background-color: #140021;
+      color: white;
+      padding: 15px;
+      font-weight: 500;
+      font-size: 1.125em;
+      border-radius: 20px; }
+    .main-contacto .main-div-titulo a:link {
+      text-decoration: none; }
+    .main-contacto .main-div-titulo a:visited {
+      text-decoration: none; }
+    .main-contacto .main-div-titulo a:active {
+      text-decoration: none; }
+
+.aside-contacto {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  background-color: #140021;
+  color: white;
+  align-items: center;
+  opacity: 0.8; }
+  .aside-contacto i {
+    position: relative;
+    top: -0.2em;
+    font-size: 1.875em;
+    padding: 0px 0.4em; }
+  .aside-contacto h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 50px 0px;
+    margin: 0; }
+  .aside-contacto .aside-contacto-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .aside-contacto .h3-aside-contacto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    position: relative;
+    display: inline-flex;
+    left: 50px;
+    top: -55px;
+    margin: 0;
+    width: 200px; }
+  .aside-contacto .parrafo {
+    position: relative;
+    left: 55px;
+    top: -45px;
+    width: 300px; }
+
+.formulario-contacto {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin-top: 200px;
+  margin-left: 30%;
+  border-radius: 20px;
+  padding: 0px 2em;
+  box-shadow: 0px 0px 10px 1px  #333333; }
+  .formulario-contacto .formulario {
+    display: flex;
+    flex-direction: column; }
+    .formulario-contacto .formulario legend {
+      text-align: center;
+      margin: 30px 0px;
+      font-size: 1.125em;
+      font-weight: 600; }
+    .formulario-contacto .formulario .form-nombre {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      width: 90%;
+      font-weight: 600; }
+      .formulario-contacto .formulario .form-nombre input {
+        border-radius: 5px;
+        border: 2px solid #560090;
+        width: 100%;
+        padding: 10px; }
+    .formulario-contacto .formulario .form-email {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      width: 90%;
+      font-weight: 600; }
+      .formulario-contacto .formulario .form-email input {
+        border-radius: 5px;
+        border: 2px solid #560090;
+        width: 100%;
+        padding: 10px; }
+    .formulario-contacto .formulario .form-mensaje {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      width: 90%;
+      font-weight: 600;
+      width: auto;
+      height: auto;
+      padding-bottom: 5px; }
+      .formulario-contacto .formulario .form-mensaje textarea {
+        border: none;
+        outline: none;
+        resize: none; }
+      .formulario-contacto .formulario .form-mensaje .txt-mensaje {
+        margin-top: 5px;
+        width: auto;
+        height: auto;
+        border: 2px solid #560090;
+        border-radius: 2px;
+        font-size: 1em; }
+    .formulario-contacto .formulario .enviar input {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit; }
+    .formulario-contacto .formulario .enviar input {
+      padding: 15px;
+      font-size: 1.125em;
+      background-color: #560090;
+      color: white;
+      border-radius: 20px;
+      font-weight: 500; }
+    .formulario-contacto .formulario .enviar input:hover {
+      transform: scale(1.1, 1.1);
+      transition: 0.3s; }
+
+@media only screen and (max-width: 1120px) {
+  .main-contacto .main-div-titulo {
+    background-color: rgba(23, 23, 23, 0.3);
+    border-radius: 20px; }
+  .formulario-contacto {
+    margin-left: 25%; } }
+
+@media only screen and (max-width: 980px) {
+  .main-contacto {
+    flex-direction: column;
+    background-image: none;
+    margin-top: 100px;
+    margin-bottom: 300px; }
+    .main-contacto .main-div-titulo {
+      background-color: transparent;
+      margin-left: 0;
+      text-align: center; }
+    .main-contacto .aside-contacto {
+      width: 50%;
+      border-radius: 20px;
+      width: none;
+      height: none; }
+  .formulario-contacto {
+    margin-left: 24%;
+    width: 400px; } }
+
+@media only screen and (max-width: 735px) {
+  .main-contacto .aside-contacto {
+    width: 350px;
+    height: 600px; }
+  .formulario-contacto {
+    margin-left: 10%;
+    width: 300px;
+    height: 700px; } }
+
+.main-faqs {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .main-faqs .tamanio {
+    width: 100%; }
+
+@media only screen and (max-width: 375px) {
+  .main-faqs .tamanio {
+    margin-left: 10%; } }
+
+.error-404 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .error-404 h1 {
+    position: relative;
+    top: -1em;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 20px; }
+  .error-404 .boton-inicio {
+    position: relative;
+    top: -14em;
+    padding: 1em;
+    background-color: #140021;
+    border-radius: 20px;
+    color: white; }
+  .error-404 .boton-inicio:link {
+    text-decoration: none; }
+  .error-404 .boton-inicio:visited {
+    text-decoration: none; }
+  .error-404 .boton-inicio:active {
+    text-decoration: none; }
+  .error-404 .boton-inicio:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3; }

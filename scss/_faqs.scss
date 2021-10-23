@@ -1,0 +1,17 @@
+// estilos a Faqs
+.main-faqs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .tamanio{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 375px){
+    .main-faqs{
+        .tamanio{
+            margin-left: 10%;
+        }
+    }
+}

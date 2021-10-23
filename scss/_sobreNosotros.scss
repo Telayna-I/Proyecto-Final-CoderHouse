@@ -1,0 +1,138 @@
+// estilos a sobre nosotros
+// estilos al main de sobre nosotros
+
+.main-sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+
+    .main-div-title{
+        display: flex;
+        position: relative;
+        background-color: $bgtitles;
+        border-radius: 20px;
+        top: 35px;
+        z-index: 1;
+
+        h1{
+            padding: 13px;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+
+    .color-main{
+        display: flex;  
+        position: relative;
+        background-color:$bgsobrenos;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .grid-container{
+            display: grid;
+            width: 70%;
+            height: 50%;
+            padding:80px 0px ;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr ;
+            justify-items: center;
+            align-items: center;
+            grid-row-gap: 40px 
+        }
+
+        .div{
+            display: flex;
+            width: 230px;
+            height: 255px;
+            border-radius: 20px;
+            background-color: $textsec;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+
+            p{
+                font-size:1em;
+                font-weight: bold;
+                padding: 10px 15px;
+                text-align: center;
+            
+            }
+
+            img{
+                padding: 5px;
+            }
+        }
+
+        .servicioTecnico{
+            img{
+                margin-top: 1em;
+            }
+        }
+
+        .div:hover{
+            box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.67);
+            transform:scale(1.1, 1.1);
+            transition: 0.5s;
+        }
+    }
+}
+
+
+// estilos a seccion de imagenes de sobre nosotros
+.imagenes-sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 150px 0px;
+
+    .oficina{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 450px;
+        background-color: $textsec;
+        margin: 20px;
+        border-radius:20px ;
+        padding: 30px;
+        box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
+
+        img{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+        }
+    }
+
+    h2{
+        padding: 20px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    .main-sobre-nosotros{
+        .color-main{
+            .grid-container{
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }   
+}
+
+@media only screen and (max-width: 740px){
+    .main-sobre-nosotros{
+        .color-main{
+            .grid-container{
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+            }
+        }
+    }  
+}

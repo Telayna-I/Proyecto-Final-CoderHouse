@@ -13,12 +13,10 @@
     }
 
     .boton-inicio{
-        position: relative;
-        top: -14em;
-        padding: 1em;
-        background-color:$bgvioletao;
+        padding: 1rem;
+        background-color: $textsec;
         border-radius: 20px;
-        color:$textsec;
+        color:$bgblack;
     }
 
     .boton-inicio:link{

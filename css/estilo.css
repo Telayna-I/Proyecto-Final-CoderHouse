@@ -218,17 +218,29 @@ main {
     flex-direction: column; }
     .main-index .main-div-texto {
       align-items: center;
-      text-align: center; } }
+      text-align: center;
+      margin-top: 3em;
+      width: 65%; }
+      .main-index .main-div-texto h1 {
+        margin-bottom: 0.5em; }
+    .main-index picture img {
+      display: none; } }
 
 @media only screen and (max-width: 900px) {
   .main-index {
     flex-direction: column-reverse; }
     .main-index .main-div-texto {
-      font-size: 0.8rem;
       text-align: center;
-      margin-left: 0px; }
+      margin-left: 0px;
+      width: 80%; }
+      .main-index .main-div-texto h1 {
+        font-size: 2rem; }
+      .main-index .main-div-texto p {
+        font-size: 1.2rem;
+        line-height: normal; }
     .main-index picture img {
-      width: 400px; }
+      width: 400px;
+      display: none; }
   .servicios .boxes {
     flex-direction: column;
     margin-left: 0;
@@ -521,8 +533,8 @@ main {
     width: 350px;
     height: 600px; }
   .formulario-contacto {
-    margin-left: 10%;
-    width: 300px;
+    margin-left: 13%;
+    width: 350px;
     height: 700px; } }
 
 .main-faqs {

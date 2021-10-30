@@ -45,8 +45,7 @@
 
         .div{
             display: flex;
-            width: 230px;
-            height: 255px;
+            @include sizeBoxSn(230px,255px);
             border-radius: 20px;
             background-color: $textsec;
             flex-direction: column;
@@ -55,7 +54,7 @@
             border: 3px solid black;
 
             p{
-                font-size:1em;
+                font-size:1rem;
                 font-weight: bold;
                 padding: 10px 15px;
                 text-align: center;
@@ -103,7 +102,6 @@
         img{
             width: 300px;
             height: 200px;
-            border-radius: 20px;
         }
     }
 

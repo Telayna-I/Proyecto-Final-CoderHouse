@@ -15,4 +15,18 @@ $pprimario:1.375rem;
 $psecundario:1rem;
 
 
-// 
+// mixins
+@mixin sizeBoxIndex($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin sizeBoxSn($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin imgOfi($width, $height) {
+    height: $height;
+    width: $width;
+}

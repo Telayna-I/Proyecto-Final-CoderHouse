@@ -16,7 +16,8 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 2px 5px black; }
   header .nav-propia .container-fluid .menu li {
     list-style-type: none; }
     header .nav-propia .container-fluid .menu li .nav-link {
@@ -120,11 +121,10 @@ main {
 .servicios {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 5em; }
+  align-items: center; }
   .servicios .h2-servicios {
     position: relative;
-    top: 1.5em;
+    top: 5.5em;
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -268,7 +268,7 @@ main {
   .main-sobre-nosotros .color-main {
     display: flex;
     position: relative;
-    background-color: #2B1B45;
+    background-image: url(/assets/dragon-scales.svg);
     flex-wrap: wrap;
     width: 100%;
     flex-direction: column;

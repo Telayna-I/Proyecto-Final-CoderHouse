@@ -24,7 +24,10 @@
     .color-main{
         display: flex;  
         position: relative;
-        background-color:$bgsobrenos;
+        background-image: url(/assets/dragon-scales.svg);
+
+
+        
         flex-wrap: wrap;
         width: 100%;
         flex-direction: column;

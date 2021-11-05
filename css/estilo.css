@@ -136,8 +136,9 @@ main {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 150px;
-    padding: 8em 0em; }
+    margin-bottom: 0px;
+    padding: 2em 0em;
+    background-color: #560090; }
     .servicios .boxes .box {
       display: flex;
       flex-direction: column;
@@ -201,7 +202,7 @@ main {
         .servicios .boxes .box .beneficios i {
           position: relative;
           top: 4px;
-          padding-right: 8px;
+          padding-right: 2px;
           font-size: 0.938rem;
           color: #00fc2a; }
         .servicios .boxes .box .beneficios .beneficio {
@@ -209,7 +210,7 @@ main {
           flex-direction: row;
           margin-top: 1.5em; }
     .servicios .boxes .box:hover {
-      border: 4px solid #560090;
+      border: 4px solid #140021;
       transform: scale(1.1, 1.1);
       transition: 0.3s; }
 

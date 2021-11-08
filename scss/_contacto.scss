@@ -16,10 +16,14 @@
         position: relative;
         top: -50px;
         width: 450px;
-        height: 250px;
+        height: 18em;
         margin-left: 100px;
         color: $textsec;
         padding: 10px;
+        background: rgba( 255, 255, 255, 0.1 );
+        backdrop-filter: blur( 8px );
+        -webkit-backdrop-filter: blur( 8px );
+        border-radius: 10px;
 
         h1{
             font-family: 'Roboto', sans-serif;
@@ -38,7 +42,11 @@
             padding: 15px;
             font-weight: 500;
             font-size: 1.125rem;
-            border-radius: 20px;
+            border-radius: 10px;
+        }
+
+        a:hover{
+            transform: scale(1.1 , 1.1);
         }
 
         a:link{
@@ -59,10 +67,9 @@
     flex-direction: column;
     height: 500px;
     width: 400px;
-    background-color: $bgvioletao;
+    background: rgba( 20, 0, 33, 0.9 );
     color: $textsec;
     align-items: center;
-    opacity: 0.8;
 
     i{
         position: relative;
@@ -182,7 +189,7 @@
 
             .txt-mensaje{
                 margin-top: 5px;
-                width: auto;
+                width: 90%;
                 height: auto;
                 border: 2px solid $bgprimario;
                 border-radius: 2px;
@@ -206,7 +213,7 @@
                 font-size: 1.125rem;
                 background-color: $bgprimario;
                 color: $textsec;
-                border-radius: 20px;
+                border-radius: 10px;
                 font-weight: 500;
                 
             }
@@ -221,12 +228,6 @@
 
 
 @media only screen and (max-width: 1120px){
-    .main-contacto{
-        .main-div-titulo{
-            background-color:rgba(23, 23, 23,0.3);
-            border-radius: 20px;
-        }
-    }
 
     .formulario-contacto{
         margin-left: 25%;
@@ -241,9 +242,15 @@
         margin-bottom: 300px;
 
         .main-div-titulo{
-            background-color:transparent;
+            background-color:rgba( 20, 0, 33, 0.9 );
             margin-left: 0;
             text-align: center;
+            width: 90%;
+            height: 500px;
+
+            a{
+                background-color: $bgsobrenos;
+            }
         }
 
         .aside-contacto{
@@ -262,6 +269,12 @@
 
 @media only screen and (max-width: 735px){
     .main-contacto{
+
+        .main-div-titulo{
+            .envia-un-mensaje{
+                margin-bottom: 2em;
+            }
+        }
         .aside-contacto{
             width: 350px;
             height: 600px;

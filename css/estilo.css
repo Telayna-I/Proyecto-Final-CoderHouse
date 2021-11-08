@@ -144,12 +144,15 @@ main {
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
-      background-color: white;
       height: 500px;
       width: 280px;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.67);
-      box-shadow: 5px 12px 22px 2px rgba(0, 0, 0, 0.38); }
+      background: rgba(255, 255, 255, 0.65);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: black; }
       .servicios .boxes .box .h3-box {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: bold;
@@ -181,7 +184,7 @@ main {
         width: 170px;
         padding: 10px;
         border-radius: 20px;
-        color: #560090;
+        color: black;
         font-weight: bolder;
         border: solid 1px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 9px 23px 1px rgba(0, 0, 0, 0.1); }
@@ -210,7 +213,7 @@ main {
           flex-direction: row;
           margin-top: 1.5em; }
     .servicios .boxes .box:hover {
-      border: 4px solid #140021;
+      border: 2px solid rgba(255, 255, 255, 0.18);
       transform: scale(1.1, 1.1);
       transition: 0.3s; }
 
@@ -242,6 +245,8 @@ main {
     .main-index picture img {
       width: 400px;
       display: none; }
+  .servicios .h2-servicios {
+    top: 4em; }
   .servicios .boxes {
     flex-direction: column;
     margin-left: 0;
@@ -268,7 +273,7 @@ main {
   .main-sobre-nosotros .color-main {
     display: flex;
     position: relative;
-    background-image: url(/assets/dragon-scales.svg);
+    background-image: url(dragon-scales.svg);
     flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
@@ -288,12 +293,16 @@ main {
       display: flex;
       height: 255px;
       width: 230px;
-      border-radius: 20px;
-      background-color: white;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 3px solid black; }
+      color: white;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(8.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18); }
       .main-sobre-nosotros .color-main .div p {
         font-size: 1rem;
         font-weight: bold;
@@ -357,10 +366,14 @@ main {
     position: relative;
     top: -50px;
     width: 450px;
-    height: 250px;
+    height: 18em;
     margin-left: 100px;
     color: white;
-    padding: 10px; }
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px; }
     .main-contacto .main-div-titulo h1 {
       font-family: 'Roboto', sans-serif;
       padding: 5px 0px;
@@ -374,7 +387,9 @@ main {
       padding: 15px;
       font-weight: 500;
       font-size: 1.125rem;
-      border-radius: 20px; }
+      border-radius: 10px; }
+    .main-contacto .main-div-titulo a:hover {
+      transform: scale(1.1, 1.1); }
     .main-contacto .main-div-titulo a:link {
       text-decoration: none; }
     .main-contacto .main-div-titulo a:visited {
@@ -387,10 +402,9 @@ main {
   flex-direction: column;
   height: 500px;
   width: 400px;
-  background-color: #140021;
+  background: rgba(20, 0, 33, 0.9);
   color: white;
-  align-items: center;
-  opacity: 0.8; }
+  align-items: center; }
   .aside-contacto i {
     position: relative;
     top: -0.2em;
@@ -479,7 +493,7 @@ main {
         resize: none; }
       .formulario-contacto .formulario .form-mensaje .txt-mensaje {
         margin-top: 5px;
-        width: auto;
+        width: 90%;
         height: auto;
         border: 2px solid #560090;
         border-radius: 2px;
@@ -497,16 +511,13 @@ main {
       font-size: 1.125rem;
       background-color: #560090;
       color: white;
-      border-radius: 20px;
+      border-radius: 10px;
       font-weight: 500; }
     .formulario-contacto .formulario .enviar input:hover {
       transform: scale(1.1, 1.1);
       transition: 0.3s; }
 
 @media only screen and (max-width: 1120px) {
-  .main-contacto .main-div-titulo {
-    background-color: rgba(23, 23, 23, 0.3);
-    border-radius: 20px; }
   .formulario-contacto {
     margin-left: 25%; } }
 
@@ -517,9 +528,13 @@ main {
     margin-top: 100px;
     margin-bottom: 300px; }
     .main-contacto .main-div-titulo {
-      background-color: transparent;
+      background-color: rgba(20, 0, 33, 0.9);
       margin-left: 0;
-      text-align: center; }
+      text-align: center;
+      width: 90%;
+      height: 500px; }
+      .main-contacto .main-div-titulo a {
+        background-color: #2B1B45; }
     .main-contacto .aside-contacto {
       width: 50%;
       border-radius: 20px;
@@ -530,6 +545,8 @@ main {
     width: 400px; } }
 
 @media only screen and (max-width: 735px) {
+  .main-contacto .main-div-titulo .envia-un-mensaje {
+    margin-bottom: 2em; }
   .main-contacto .aside-contacto {
     width: 350px;
     height: 600px; }

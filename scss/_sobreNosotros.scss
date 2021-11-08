@@ -24,7 +24,7 @@
     .color-main{
         display: flex;  
         position: relative;
-        background-image: url(/assets/dragon-scales.svg);
+        background-image: url(dragon-scales.svg);
 
 
         
@@ -49,12 +49,16 @@
         .div{
             display: flex;
             @include sizeBoxSn(230px,255px);
-            border-radius: 20px;
-            background-color: $textsec;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 3px solid black;
+            color: $textsec;
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 3px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
 
             p{
                 font-size:1rem;

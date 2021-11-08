@@ -79,11 +79,15 @@ main{
             flex-direction: column;
             justify-content: space-between;
             text-align: center;
-            background-color: $textsec;
             @include sizeBoxIndex(280px,500px);
-            border-radius: 20px;
-            border:1px solid rgba(255, 255, 255, 0.67) ;
-            box-shadow:5px 12px 22px 2px rgba(0, 0, 0, 0.38);
+            background: rgba( 255, 255, 255, 0.65 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4.5px );
+            -webkit-backdrop-filter: blur( 4.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            color: $bgblack;
+
 
             .h3-box{
                 font-family: 'IBM Plex Sans', sans-serif;
@@ -128,7 +132,7 @@ main{
                 width: 170px;
                 padding: 10px;
                 border-radius: 20px;
-                color:$bgprimario ;
+                color:$bgblack ;
                 font-weight: bolder;
                 border: solid 1px rgba(0, 0, 0, 0.1) ;
                 box-shadow:0px 9px 23px 1px rgba(0, 0, 0, 0.1);
@@ -167,7 +171,7 @@ main{
             }
         }
         .box:hover{
-            border:4px solid #140021 ;
+            border:2px solid rgba( 255, 255, 255, 0.18 );
             transform:scale(1.1, 1.1);
             transition: 0.3s;
         }
@@ -231,6 +235,10 @@ main{
     }
     
     .servicios{
+
+        .h2-servicios{
+            top: 4em;
+        }
 
         .boxes{
             flex-direction: column;

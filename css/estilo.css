@@ -131,7 +131,7 @@ main {
     text-transform: uppercase;
     padding: 0.7em;
     background-color: #866EAD;
-    border-radius: 20px; }
+    border-radius: 10px; }
   .servicios .boxes {
     display: flex;
     justify-content: space-around;
@@ -259,11 +259,10 @@ main {
   display: flex;
   flex-direction: column; }
   .main-sobre-nosotros .main-div-title {
-    display: flex;
     position: relative;
     background-color: #866EAD;
-    border-radius: 20px;
-    top: 35px;
+    border-radius: 10px;
+    top: 2.5em;
     z-index: 1; }
     .main-sobre-nosotros .main-div-title h1 {
       padding: 13px;
@@ -319,27 +318,22 @@ main {
 
 .imagenes-sucursales {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 150px 0px; }
-  .imagenes-sucursales .oficina {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 450px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0px 0px 15px 1px black; }
-    .imagenes-sucursales .oficina img {
-      width: 300px;
-      height: 200px; }
-  .imagenes-sucursales h2 {
-    padding: 20px;
-    text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em; }
+  .imagenes-sucursales .h2-image {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-style: italic;
-    font-weight: 600; }
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7em;
+    background-color: #866EAD;
+    border-radius: 10px;
+    margin-bottom: 0.5em; }
+  .imagenes-sucursales .maxwd {
+    margin: auto;
+    max-width: 650px;
+    text-align: center; }
 
 @media only screen and (max-width: 1040px) {
   .main-sobre-nosotros .color-main .grid-container {

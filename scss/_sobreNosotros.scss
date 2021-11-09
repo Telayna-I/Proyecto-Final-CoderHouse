@@ -6,11 +6,10 @@
     flex-direction: column;
 
     .main-div-title{
-        display: flex;
         position: relative;
         background-color: $bgtitles;
-        border-radius: 20px;
-        top: 35px;
+        border-radius: 10px;
+        top: 2.5em;
         z-index: 1;
 
         h1{
@@ -91,32 +90,26 @@
 // estilos a seccion de imagenes de sobre nosotros
 .imagenes-sucursales{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 150px 0px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
 
-    .oficina{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 450px;
-        background-color: $textsec;
-        margin: 20px;
-        border-radius:20px ;
-        padding: 30px;
-        box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
 
-        img{
-            width: 300px;
-            height: 200px;
-        }
+    .h2-image{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.7em;
+        background-color: $bgtitles;
+        border-radius: 10px;
+        margin-bottom: 0.5em;
     }
 
-    h2{
-        padding: 20px;
-        text-transform: uppercase;
-        font-style: italic;
-        font-weight: 600;
+    .maxwd{
+        margin:auto;
+        max-width: 650px;
+        text-align: center;
     }
 }
 

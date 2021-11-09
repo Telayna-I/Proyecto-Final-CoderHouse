@@ -353,27 +353,20 @@ main {
 
 .main-contacto {
   display: flex;
-  background-image: url(contacto.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url(dragon-scales.svg);
   height: 500px;
   width: 100%;
-  margin-top: 0px; }
+  margin-top: 3em; }
   .main-contacto .main-div-titulo {
     display: flex;
     flex-direction: column;
     position: relative;
     top: -50px;
     width: 450px;
-    height: 18em;
+    height: 290px;
     margin-left: 100px;
     color: white;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px; }
+    padding: 10px; }
     .main-contacto .main-div-titulo h1 {
       font-family: 'Roboto', sans-serif;
       padding: 5px 0px;
@@ -381,29 +374,35 @@ main {
     .main-contacto .main-div-titulo p {
       padding: 20px 0px;
       margin-bottom: 20px; }
-    .main-contacto .main-div-titulo a {
+    .main-contacto .main-div-titulo .envia-un-mensaje {
       background-color: #140021;
       color: white;
       padding: 15px;
       font-weight: 500;
       font-size: 1.125rem;
-      border-radius: 10px; }
-    .main-contacto .main-div-titulo a:hover {
-      transform: scale(1.1, 1.1); }
-    .main-contacto .main-div-titulo a:link {
-      text-decoration: none; }
-    .main-contacto .main-div-titulo a:visited {
-      text-decoration: none; }
-    .main-contacto .main-div-titulo a:active {
-      text-decoration: none; }
+      border-radius: 10px;
+      width: 41%; }
+      .main-contacto .main-div-titulo .envia-un-mensaje a {
+        color: white; }
+      .main-contacto .main-div-titulo .envia-un-mensaje a:link {
+        text-decoration: none; }
+      .main-contacto .main-div-titulo .envia-un-mensaje a:visited {
+        text-decoration: none; }
+      .main-contacto .main-div-titulo .envia-un-mensaje a:active {
+        text-decoration: none; }
+    .main-contacto .main-div-titulo .envia-un-mensaje:hover {
+      transform: scale(1.1, 1.1);
+      transition: 0.3s; }
 
 .aside-contacto {
   display: flex;
   flex-direction: column;
   height: 500px;
   width: 400px;
-  background: rgba(20, 0, 33, 0.9);
   color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   align-items: center; }
   .aside-contacto i {
     position: relative;
@@ -440,14 +439,17 @@ main {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 600px;
-  height: 700px;
-  background-color: white;
+  width: 37.5em;
+  height: 40.625em;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-top: 200px;
   margin-left: 30%;
-  border-radius: 20px;
-  padding: 0px 2em;
-  box-shadow: 0px 0px 10px 1px  #333333; }
+  padding: 0px 2em; }
   .formulario-contacto .formulario {
     display: flex;
     flex-direction: column; }
@@ -528,18 +530,23 @@ main {
     margin-top: 100px;
     margin-bottom: 300px; }
     .main-contacto .main-div-titulo {
-      background-color: rgba(20, 0, 33, 0.9);
       margin-left: 0;
       text-align: center;
       width: 90%;
       height: 500px; }
       .main-contacto .main-div-titulo a {
         background-color: #2B1B45; }
+      .main-contacto .main-div-titulo .envia-un-mensaje {
+        width: 42%;
+        align-self: center; }
     .main-contacto .aside-contacto {
       width: 50%;
-      border-radius: 20px;
+      border-radius: 10px;
       width: none;
-      height: none; }
+      height: none;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18); }
   .formulario-contacto {
     margin-left: 24%;
     width: 400px; } }
@@ -551,9 +558,9 @@ main {
     width: 350px;
     height: 600px; }
   .formulario-contacto {
-    margin-left: 13%;
+    margin-left: 13.5%;
     width: 350px;
-    height: 700px; } }
+    height: 650px; } }
 
 .main-faqs {
   width: 100%;

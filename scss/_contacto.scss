@@ -2,13 +2,10 @@
 
 .main-contacto{
     display: flex;
-    background-image: url(contacto.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url(dragon-scales.svg);
     height:500px;
     width: 100%;
-    margin-top:0px ;
+    margin-top:3em ;
 
     .main-div-titulo{
         display: flex;
@@ -16,14 +13,10 @@
         position: relative;
         top: -50px;
         width: 450px;
-        height: 18em;
+        height: 290px;
         margin-left: 100px;
         color: $textsec;
         padding: 10px;
-        background: rgba( 255, 255, 255, 0.1 );
-        backdrop-filter: blur( 8px );
-        -webkit-backdrop-filter: blur( 8px );
-        border-radius: 10px;
 
         h1{
             font-family: 'Roboto', sans-serif;
@@ -36,30 +29,37 @@
             margin-bottom: 20px;
         }
 
-        a{
+        .envia-un-mensaje{
             background-color:$bgvioletao;
             color: $textsec;
             padding: 15px;
             font-weight: 500;
             font-size: 1.125rem;
             border-radius: 10px;
-        }
+            width: 41%;
 
-        a:hover{
+            a{
+                color: white;
+            }
+    
+            a:link{
+                text-decoration:none;
+            }
+    
+            a:visited{
+                text-decoration:none;
+            }
+    
+            a:active{
+                text-decoration:none;
+            }
+        }
+        .envia-un-mensaje:hover{
             transform: scale(1.1 , 1.1);
+            transition: 0.3s;
         }
 
-        a:link{
-            text-decoration:none;
-        }
-
-        a:visited{
-            text-decoration:none;
-        }
-
-        a:active{
-            text-decoration:none;
-        }
+        
     }
 }
 .aside-contacto{
@@ -67,8 +67,10 @@
     flex-direction: column;
     height: 500px;
     width: 400px;
-    background: rgba( 20, 0, 33, 0.9 );
     color: $textsec;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
     align-items: center;
 
     i{
@@ -121,14 +123,17 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 600px;
-    height: 700px;
-    background-color:$textsec;
-    margin-top: 200px ;
+    width: 37.5em;
+    height: 40.625em;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 200px;
     margin-left: 30%;
-    border-radius: 20px;
     padding: 0px 2em;
-    box-shadow: 0px 0px 10px 1px  #333333;
 
     .formulario{
         display: flex;
@@ -242,7 +247,6 @@
         margin-bottom: 300px;
 
         .main-div-titulo{
-            background-color:rgba( 20, 0, 33, 0.9 );
             margin-left: 0;
             text-align: center;
             width: 90%;
@@ -251,13 +255,21 @@
             a{
                 background-color: $bgsobrenos;
             }
+
+            .envia-un-mensaje{
+                width: 42%;
+                align-self: center;
+            }
         }
 
         .aside-contacto{
             width: 50%;
-            border-radius: 20px;
+            border-radius: 10px;
             width: none;
             height: none;
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
     }
     .formulario-contacto{
@@ -283,8 +295,8 @@
     
     
     .formulario-contacto{
-        margin-left:13%;
+        margin-left:13.5%;
         width: 350px;
-        height: 700px;
+        height: 650px;
     }
 }

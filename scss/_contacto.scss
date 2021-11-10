@@ -17,6 +17,7 @@
         margin-left: 100px;
         color: $textsec;
         padding: 10px;
+        align-items: flex-start ;
 
         h1{
             font-family: 'Roboto', sans-serif;
@@ -27,6 +28,7 @@
         p{
             padding: 20px 0px;
             margin-bottom: 20px;
+            font-size: $psecundario;
         }
 
         .envia-un-mensaje{
@@ -36,7 +38,6 @@
             font-weight: 500;
             font-size: 1.125rem;
             border-radius: 10px;
-            width: 41%;
 
             a{
                 color: white;
@@ -235,7 +236,8 @@
 @media only screen and (max-width: 1120px){
 
     .formulario-contacto{
-        margin-left: 25%;
+        margin: auto;
+        margin-top: 20em;
     }
 }
 
@@ -251,19 +253,21 @@
             text-align: center;
             width: 90%;
             height: 500px;
+            background-image: url(dragon-scales.svg);
+            align-items: center;
+            border-radius: 10px;
 
             a{
                 background-color: $bgsobrenos;
             }
 
             .envia-un-mensaje{
-                width: 42%;
                 align-self: center;
             }
         }
 
         .aside-contacto{
-            width: 50%;
+            margin: auto;
             border-radius: 10px;
             width: none;
             height: none;
@@ -273,8 +277,9 @@
         }
     }
     .formulario-contacto{
-        margin-left: 24%;
+        margin: auto;
         width: 400px;
+        margin-top: 20em;
 
     }
 }
@@ -295,8 +300,24 @@
     
     
     .formulario-contacto{
-        margin-left:13.5%;
+        margin:auto;
+        margin-top: 25em;
         width: 350px;
         height: 650px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .formulario-contacto{
+        margin: auto;
+        margin-top: 20em;
+    }
+
+    .main-contacto{
+        .main-div-titulo{
+            .envia-un-mensaje{
+                align-self: center;
+            }
+        }
     }
 }

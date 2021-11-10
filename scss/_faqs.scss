@@ -17,18 +17,20 @@
         padding: 1rem;
         background-color: $bgtitles;
         margin-top: 2rem;
-        border-radius: 20px;
+        border-radius: 10px;
         font-size: $h1;
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: bold;
         font-style: italic;
         text-transform: uppercase;
+        text-align: center;
     }
 }
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 414px){
     .main-faqs{
-        .tamanio{
-            margin-left: 10%;
+        .h1-faqs{
+            font-size: 1.5rem ;
+            text-align: center;
         }
     }
 }

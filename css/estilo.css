@@ -580,6 +580,13 @@ main {
     justify-content: center;
     align-items: center;
     align-self: center; }
+    .main-faqs .tamanio .container-accordion .accordion .accordion-item {
+      background-color: #f8ceec;
+      background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); }
+      .main-faqs .tamanio .container-accordion .accordion .accordion-item button {
+        color: white;
+        font-weight: bold;
+        background-color: #560090; }
   .main-faqs .h1-faqs {
     padding: 1rem;
     background-color: #866EAD;

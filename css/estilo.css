@@ -131,7 +131,15 @@ main {
     text-transform: uppercase;
     padding: 0.7em;
     background-color: #866EAD;
-    border-radius: 10px; }
+    border-radius: 10px;
+    z-index: 100; }
+  .servicios .wave-top {
+    position: relative;
+    top: 2px;
+    z-index: 0; }
+  .servicios .wave-bot {
+    position: relative;
+    top: -2px; }
   .servicios .boxes {
     display: flex;
     justify-content: space-around;

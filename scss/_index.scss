@@ -63,6 +63,17 @@ main{
         padding: 0.7em;
         background-color: $bgtitles;
         border-radius: 10px;
+        z-index: 100;
+    }
+
+    .wave-top{
+        position: relative;
+        top: 2px;
+        z-index: 0;
+    }
+    .wave-bot{
+        position: relative;
+        top: -2px;
     }
 
     .boxes{

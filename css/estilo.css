@@ -132,7 +132,7 @@ main {
     padding: 0.7em;
     background-color: #866EAD;
     border-radius: 10px;
-    z-index: 100; }
+    z-index: 1; }
   .servicios .wave-top {
     position: relative;
     top: 2px;
@@ -262,6 +262,14 @@ main {
     .servicios .boxes .box {
       margin-bottom: 3em;
       margin-right: 0; } }
+
+@media only screen and (max-width: 420px) {
+  .servicios .h2-servicios {
+    top: 0; }
+  .servicios .wave-top {
+    display: none; }
+  .servicios .wave-bot {
+    display: none; } }
 
 .main-sobre-nosotros {
   display: flex;

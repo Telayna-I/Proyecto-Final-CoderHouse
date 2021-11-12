@@ -63,7 +63,7 @@ main{
         padding: 0.7em;
         background-color: $bgtitles;
         border-radius: 10px;
-        z-index: 100;
+        z-index: 1;
     }
 
     .wave-top{
@@ -260,6 +260,21 @@ main{
                 margin-bottom: 3em;
                 margin-right: 0;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .servicios{
+
+        .h2-servicios{
+            top: 0;
+        }
+        .wave-top{
+            display: none;
+        }
+        .wave-bot{
+            display: none;
         }
     }
 }
